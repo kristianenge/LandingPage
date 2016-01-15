@@ -1,0 +1,1581 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+
+
+
+
+
+
+
+<title>Aftenposten Innsikt</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+<meta property="og:title" content="Aftenposten Innsikt"/>
+<meta property="og:description" content="Aftenposten Innsikt"/>
+<meta property="og:type" content="website"/>
+<meta property="og:id" content="40"/>
+<meta property="og:url" content="https://kundeweb.aftenposten.no/bestilling/skjema.htm?id=40"/>
+<meta property="og:image" content="https://snotech-media.s3.amazonaws.com/ap/forlag/Innsikt/450x800_innsikt.jpg?v=1452074186000"/>
+<meta property="og:image:secure_url" content="https://snotech-media.s3.amazonaws.com/ap/forlag/Innsikt/450x800_innsikt.jpg?v=1452074186000"/>
+<meta property="og:image:type" content="image/jpeg"/>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="//www.di.no/addresshelper/diah.css">
+
+<link href="/bestilling/css/form/aftenposten/modern.css?v=dad2831" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="/bestilling/css/logo/icons.css?v=dad2831"/>
+
+<style>
+    body {
+    font-size: 150%;
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    color: gray;
+    background-color: whitesmoke;
+}
+
+.well {
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 0px 0px #888;
+    padding-bottom: 2em;
+    max-width: 980px;
+}
+
+.header_text {
+    font-size: 1.625em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    color: #323232;
+    padding: 1.15385em 0;
+    padding-top: 0em;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 3em;
+}
+
+.header_text_small {
+    font-size: 0.7em;
+    text-transform: none;
+    text-align: center;
+    font-weight: 400;
+    color: #323232;
+    padding: 1.15385em 0;
+    padding-top: 0em;
+    margin-bottom: 3em;
+}
+
+.header_text_medium {
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    color: #323232;
+    padding: 1.15385em 0;
+    padding-top: 0em;
+    margin-bottom: 3em;
+}
+
+.button {
+    margin-top: 2em;
+    background-color: #1dafec;
+    font-size: 1.125em;
+    line-height: 2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 0.55556em 1.94444em;
+    border-radius: 2px;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.btn {
+    padding: 6px 40px;
+    margin: 3px;
+}
+
+.input {
+    font-size: 1.0em;
+    height: 2.7em;
+    font-family: "proxima-nova", sans-serif;
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    border-radius: 0;
+    color: #656565;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;
+    -webkit-appearance: none;
+
+}
+
+.input-light {
+    background-color: #fdfdfd;
+}
+
+.input-align {
+    margin-top: 0.7em;
+}
+
+.radio {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    display: block;
+    /*text-transform: uppercase;*/
+    text-decoration: underline;
+    color: #1dafec;
+    clip: rect(0, 0, 0, 0);
+    clip: rect(0 0 0 0);
+}
+
+.noLinkLook {
+    text-decoration: none;
+    color: inherit;
+}
+
+.radio_group {
+    margin-bottom: 3em;
+}
+
+#streetContainer {
+    width: 500px;
+}
+
+#streetNumberContainer {
+    width: 50px;
+}
+
+#floorContainer {
+    width: 3em;
+}
+
+#householdContainer {
+    width: 3em;
+}
+
+#posttext {
+    margin: 0.4em;
+    margin-right: 1em;
+}
+
+#pretext {
+    margin: 0.4em;
+    margin-right: 1em;
+}
+
+#singleOption {
+    margin-left: 1em;
+}
+
+.form_header_text {
+    font-size: 1.625em;
+    text-transform: none;
+    text-align: center;
+    font-weight: 400;
+    color: #323232;
+    padding: 1.15385em 0;
+    padding-top: 0em;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 3em;
+}
+
+label.error {
+    margin-top: 1px;
+    display: inline-block;
+    margin-bottom: 2px;
+    color: darkred;
+    font-weight: lighter;
+}
+
+#invoiceFieldset {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+#storeUserInfo {
+    margin-left: 1em;
+}
+
+#spidlogo {
+    display: block;
+    width: 2.5em;
+    margin-top: 3em;
+
+}
+
+#anotherInvoicePayerTrigger {
+    margin-left: 1em;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header_text {
+        margin-bottom: 0em;
+        padding-bottom: 0;
+    }
+
+    #mobile_image {
+        margin-bottom: 1em;
+    }
+
+}
+
+.headerRow {
+    padding-left: 18px;
+}
+
+.has-feedback .form-control-feedback {
+    top: 0;
+    right: 10px;
+}
+
+.has-feedback .form-control {
+    padding-right: 12.5px;
+}
+
+.padded_row {
+    padding-left: 0.7em;
+    padding-right: 0.5em;
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+#paymentMethodArea {
+    margin-bottom: 1em;
+}
+
+.modal_spinner {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    /* The Fallback */
+    background: rgb(255, 255, 255)
+    url('../../../bestilling/img/page-loader.gif')
+    50% 50%
+    no-repeat;
+
+    background: rgba( 255, 255, 255, .8 )
+    url('../../../bestilling/img/page-loader.gif')
+    50% 50%
+    no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal_spinner {
+    display: block;
+}
+
+div.sas {
+    content: "";
+    background: url('../../img/SAS.png') no-repeat 0 0;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+.scoreDiInput .ah-default-skin{
+    background-color: transparent;
+    border: none;
+    width: auto;
+    padding: inherit;
+    margin: auto;
+}
+</style>
+
+<script src="https://di.no/addresshelper/diah.js" charset="UTF-8"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://payment.schibsted.no/js/spid-sdk-1.7.8.min.js"></script>
+
+
+
+
+<script type="application/javascript">
+    var AaiSupport = {};
+
+(function () {
+
+    this.handleSpidState = function () {
+
+        var showFormOnTimeout = true;
+
+        VGS.Event.subscribe('auth.sessionChange', function (data) {
+            if (data.session && data.session.userId && (document.location.href.indexOf('spidState') === -1)) {
+                AaiSupport.log('AaiSupport.sessionChange', 'Got user session');
+                document.location.href = document.location.href + "&spidState=1";
+            } else {
+                AaiSupport.log('AaiSupport.sessionChange', 'Got no user session');
+                $("#loginForm").css('display', 'block');
+            }
+
+            showFormOnTimeout = false;
+        });
+
+        setTimeout(function () {
+            if (showFormOnTimeout) {
+                $("#loginForm").css('display', 'block');
+            }
+        }, 1500);
+
+    };
+
+    this.log = function () {
+        if (window.console) {
+            window.console.log(Array.prototype.slice.call(arguments));
+        }
+    }
+
+}).apply(AaiSupport);
+
+
+
+
+    $(function () {
+    scoreFormValues = {};
+
+    $.ajaxSetup ({
+        // Disable caching of AJAX responses
+        cache: false
+    });
+
+    $body = $("body");
+
+    $(document).on({
+        // this is the functionality adding the spinner when loading subtypes. Sets CSS loading on body - which is controlled in modern.css and main.jsp (see also modal_spinner)
+        ajaxStart: function() { $body.addClass("loading");    },
+        ajaxStop: function() { $body.removeClass("loading"); }
+    });
+
+    $("input[name='subscriptionTypeId']").change(function() {
+        var configId = $('#subscriptionConfigurationId').val();
+        invalidateOrderform();
+        loadSubscriptionType(this.value, configId);
+    });
+
+    function loadSubscriptionType(subscriptionTypeId, subscriptionConfigurationId)
+    {
+        storeInputValues();
+        $( "#selectedSubType" ).load( "subscriptiontype.htm?subscriptionTypeId="+subscriptionTypeId+"&subscriptionConfigurationId="+subscriptionConfigurationId, reStoreInputValues);
+
+    }
+
+
+    function storeInputValues()
+    {
+        $('#aaiForm *').filter(':input').each(function(){
+            verdi = $('#'+this.id).val();
+            scoreFormValues[this.id] = verdi;
+        });
+    }
+
+    function reStoreInputValues() {
+        $(this).updatePolyfill();
+        $('#aaiForm *').filter(':input').each(function(){
+
+            if (scoreFormValues[this.id] !== undefined && !this.id.startsWith('ga_'))
+            {
+                $('#'+this.id).val(scoreFormValues[this.id]);
+            }
+        });
+    }
+
+    function isUserLoggedIn() {
+        return 'true' == $('#userIsLoggedIn').val();
+    }
+
+    function isLookupPagePresent() {
+        return $('#phoneLookupBtnDiv').length || $('#dobLookupBtnDiv').length;
+    }
+
+    function isLoginFormPresent() {
+        return $('#loginForm').length;
+    }
+
+    function isReceiverPhonePresent() {
+        return $('#receiverPhone').val().length >= 8;
+    }
+
+    // spidUserData - see http://techdocs.spid.no/sdks/js/events/#response-object
+    populateFieldsFromUserInfoIfPresent = function(spidUserData) {
+        if (spidUserData != null) {
+            $("#receiverSpidId").val(spidUserData.session.userId);
+        }
+
+        if (spidUserData != null && $('#loginForm').length) {
+            // user data is present - and loginForm is present - just fast-forward the user via SPiD for a quick login
+            var subConfId = $('#subscriptionConfigurationId').val();
+            var redirect_url = 'spid/login.htm?id=' + subConfId;
+            var selectedSubType = $("input[name='subscriptionTypeId']:checked");
+            if (selectedSubType.length) {
+                redirect_url = redirect_url + '&initSubType=' + selectedSubType.val();
+            }
+            window.location = redirect_url;
+        }
+
+        // we don't want to lookup if spidUserData is not present - or if login-box is present
+        if (spidUserData != null && !isLoginFormPresent()) {
+            // perform a dynamic lookup based on values
+            /** @namespace spidUserData.session.userId */
+            /** @namespace spidUserData.session.givenName */
+            console.log(spidUserData);
+            var query_url = 'lookup/fromspid.htm?name=' + spidUserData.session.givenName + '&id=' + spidUserData.session.userId;
+
+            $.ajax({
+                dataType: "json",
+                url: query_url,
+                data: '',
+                success: function(result, header, xhr) {},
+                async: true,
+                timeout: 2000,
+                error: function(jqXHR, status, errorThrown) {
+                    console.log('timed out looking up customer data...');
+                }
+            }).done(function(result, header, xhr) {
+                if (xhr.status === 200) {
+                    if ($('#invoiceFirstname').is(":visible")) {
+                        // if we have invoiceFirstname present - we have a gift form, and the invoicePayer should be prefilled (not receiver)
+                        fillFormInvoicePayer(result);
+                    } else {
+                        fillForm('#aaiForm', result);
+                    }
+                    $('#autoFields').show();
+                    $('#formSubmitButton').show();
+                    $('#phoneLookupBtnDiv').hide();
+                    $('#dobLookupBtnDiv').hide();
+                }
+            });
+        }
+
+        console.log('do lookup soon');
+        // if we have a phone number lookup form - with a phone number (and we have not looked up data in any other way) - perform lookup
+        if (spidUserData == null && isLookupPagePresent() && isReceiverPhonePresent()) {
+            $('#phoneLookupBtn').click();
+            //phoneNumberLookupHandler(this);
+            console.log('did lookup... foobar');
+        }
+    };
+
+    var phoneNumberLookupHandler = function(event) {
+        event.preventDefault();
+        var phoneNumber = $('#receiverPhone').val(),
+            query_url = 'lookup/customerData.htm?phonenumber=' + phoneNumber;
+
+        $.getJSON(query_url, function (result, header, xhr) {
+        }).always(function(result, header, xhr) {
+            if (xhr.status === 200) {
+                fillForm('#aaiForm', result);
+                $('#receiverPhone').val(phoneNumber);
+                $('#receiverPhone').blur(phoneNumberLookupHandler);
+                $('#autoFields').show();
+                $('#formSubmitButton').show();
+                $('#receiverEmail').focus();
+                $('#phoneLookupBtnDiv').hide();
+                return;
+            }
+
+            $('#autoFields').show();
+            $('#formSubmitButton').show();
+            $('#phoneLookupBtnDiv').hide();
+        });
+    };
+
+    var dobLookupHandler = function() {
+
+        event.preventDefault();
+
+        var firstname = $("#receiverFirstname").val(),
+            lastname = $("#receiverLastname").val(),
+            dob = $('#receiverDoB').val();
+
+        var url = 'lookup/customerDataDOB.htm?firstname=' + firstname + '&lastname=' + lastname + '&dob=' + dob;
+
+        $.getJSON(url, function (result, header, xhr) {
+        }).always(function(result, header, xhr) {
+            if (xhr.status === 200) {
+                fillForm('#aaiForm', result);
+                $('#autoFields').show();
+                $('#formSubmitButton').show();
+                $('#receiverEmail').focus();
+                $('#dobLookupBtnDiv').hide();
+                return;
+            }
+            $('#autoFields').show();
+            $('#formSubmitButton').show();
+            $('#dobLookupBtnDiv').hide();
+        });
+
+    };
+
+    addPhoneAndDobLookupListeners = function() {
+        if (window.console) {
+            console.log('inne i addPhoneAndDobLookupListeners');
+        }
+        // when this handler is registered - we also want to add a submit-handler listening event to capture <ENTER>
+        if ($('#phoneLookupBtn').is(":visible")) {
+            $('#phoneLookupBtn').click(phoneNumberLookupHandler);
+            $('#receiverPhone').keypress(function(event){
+                // if event is <ENTER> - we should not submit the form but perform the phone-lookup in stead
+                if (event.which == 13) {
+                    event.preventDefault();
+                    phoneNumberLookupHandler(event);
+                }
+            });
+        }
+
+        if ($('#dobLookupBtn').is(":visible")) {
+            function hasDobFormEnoughInfo() {
+                if ($('#receiverDoB').val() && $('#receiverLastname').val() && $('#receiverFirstname').val()) {
+                    return true;
+                }
+                return false;
+            }
+            dobKeypressHandler = function(event){
+                // if event is <ENTER> - we should not submit the form but perform the DOB-lookup in stead
+                if (event.which == 13 && hasDobFormEnoughInfo()) {
+                    event.preventDefault();
+                    dobLookupHandler();
+                }
+                // if dobForm did not have enough input - we don't prevent the enter and thus forcing validation to the input data
+            };
+
+            $('#dobLookupBtn').click(dobLookupHandler);
+            $('#receiverDoB').keypress(dobKeypressHandler);
+            $('#receiverLastname').keypress(dobKeypressHandler);
+            $('#receiverFirstname').keypress(dobKeypressHandler);
+        }
+
+    };
+
+    function fillForm(form, data) {
+        $.each(data, function (key, value) {
+            setValueOnField($('[id=' + key + ']', form), value, false);
+        });
+        setValueOnField($('#receiverDiId'), data.diId, false);
+        setValueOnField($('#receiverDoB'), data.receiverDoB, false);
+    }
+
+    function fillFormInvoicePayer(data) {
+        setValueOnField($('#invoiceFirstname'), data.receiverFirstname, false);
+        setValueOnField($('#invoiceLastname'), data.receiverLastname, false);
+        setValueOnField($('#invoiceEmail'), data.receiverEmail, false);
+        setValueOnField($('#invoicePhone'), data.receiverPhone, false);
+        setValueOnField($('#invoiceStreet'), data.receiverStreet, false);
+        setValueOnField($('#invoiceStreetNo'), data.receiverStreetNo, false);
+        setValueOnField($('#invoiceZipCode'), data.receiverZipCode, false);
+        setValueOnField($('#invoiceCity'), data.receiverCity, false);
+    }
+
+    function setValueOnField(field, value, overwriteData) {
+        if (overwriteData || !field.val()) {
+            field.val(value);
+        }
+    }
+
+    invalidateOrderform = function () {
+        $('#aaiForm').bootstrapValidator('destroy');
+    };
+
+    Boolean.parse = function (str) {
+        if (!str) {
+            console.log("Boolean.parse called with null value (" + str + ") - defaulting to false");
+            str = "false";
+        }
+        switch (str.toLowerCase ()) {
+            case "true":
+                return true;
+            case "false":
+                return false;
+            default:
+                throw new Error ("Boolean.parse: Cannot convert string to boolean.");
+        }
+    };
+
+    validateOrderform = function () {
+
+        var req = Boolean.parse($("#requireEmail").val());
+
+        var reqPhoneNr = Boolean.parse($("#requirePhoneNr").val()) ;
+
+        $.fn.bootstrapValidator.validators.zipCodeInOsloAkershus = {
+            validate: function (validator, $field, options) {
+                if ( $('#vg_checkZipForWeekendDelivery').val() == "true" ) {
+                    var zipCodeValid = false;
+                    query_url = 'lookup/supportsVGWeekendDelivery.htm?zipCode=' + $field.val();
+                    $.ajax({
+                        url: query_url,
+                        data: '',
+                        async: false,
+                        dataType: "json",
+                        timeout: 3000
+                    }).success(function(response) {
+                        zipCodeValid = response.supportsWeekendDelivery;
+                    });
+                    return zipCodeValid;
+                }
+                return true;
+            }
+        };
+
+        $("#errorBox").hide();
+        $("#receiverDiId").on('change', function () {
+            if (!$('#receiverDiId').val()) {
+                $("#errorBox").hide();
+            }
+        });
+
+        $(".form-group").on('click', '.fa-times', function () {
+            $(this).prev().val('');
+            $(this).prev().focus();
+        });
+
+        $('#aaiForm').bootstrapValidator({
+            feedbackIcons: {
+                valid: 'fa fa-check',
+                invalid: 'fa fa-times',
+                validating: 'fa fa-refresh'
+            },
+            fields: {
+                employeeCode: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Vennligst oppgi selgerkode'
+                        }
+                    }
+                },
+                paymentCode: {
+                    trigger: 'blur',
+                    feedbackIcons: 'false',
+                    validators: {
+                        notEmpty: {
+                            message: 'Vennligst oppgi gratiskode'
+                        }
+                    }
+                },
+                receiverDoB: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Vennligst oppgi fødselsdato'
+                        },
+                        regexp: {
+                            message: 'Fødselsdato skrives på dette formatet (ddmmåååå)'
+                        }
+                    }
+                },
+                childName: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Vennligst oppgi barnets navn'
+                        }
+                    }
+                },
+                receiverFirstname: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Vennligst oppgi fornavn'
+                        }
+                    }
+                },
+                receiverLastname: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Vennligst oppgi etternavn'
+                        }
+                    }
+                },
+                receiverEmail: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            enabled: req,
+                            message: 'Vennligst oppgi e-post'
+                        },
+                        emailAddress: {
+                            message: 'Ugyldig e-post adresse'
+                        }
+                    }
+                },
+
+                receiverPhone: {
+                    trigger: 'blur',
+                    validators: {
+                        digits: {
+                            message: 'Kun siffer i telefonnummer'
+                        },
+                        notEmpty: {
+                            enabled: reqPhoneNr,
+                            message: 'Vennligst oppgi telefon'
+                        },
+                        stringLength: {
+                            max: 8,
+                            min: 8,
+                            message: 'Telefonnummer må være 8 tegn langt'
+                        }
+                    }
+                },
+                receiverZipCode: {
+                    trigger: 'blur',
+                    validators: {
+                        digits: {
+                            message: 'Kun siffer i postnummer'
+                        },
+                        notEmpty: {
+                            message: 'Postnummer mangler'
+                        },
+                        stringLength: {
+                            max: 4,
+                            min: 4,
+                            message: 'Postnummer har ugyldig lengde'
+                        },
+                        zipCodeInOsloAkershus: {
+                            message: 'Beklager, vi har dessverre ikke distribusjon til dette postnummeret.'
+                        }
+                    }
+                },
+                receiverCity: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Poststed mangler'
+                        }
+                    }
+                },
+                invoiceFirstname: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Vennligst oppgi fornavn'
+                        }
+                    }
+                },
+                invoiceLastname: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Vennligst oppgi etternavn'
+                        }
+                    }
+                },
+                invoicePhone: {
+                    trigger: 'blur',
+                    validators: {
+                        digits: {
+                            message: 'Kun siffer i telefonnummer'
+                        },
+                        notEmpty: {
+                            message: 'Vennligst oppgi telefon'
+                        },
+                        stringLength: {
+                            max: 8,
+                            min: 8,
+                            message: 'Telefonnummer må være 8 tegn langt'
+                        }
+                    }
+                },
+                invoiceEmail: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Vennligst oppgi e-post'
+                        },
+                        emailAddress: {
+                            message: 'Ugyldig e-post adresse'
+                        }
+
+                    }
+                },
+                invoiceZipCode: {
+                    trigger: 'blur',
+                    validators: {
+                        digits: {
+                            message: 'Kun siffer i postnummer'
+                        },
+                        notEmpty: {
+                            message: 'Postnummer mangler'
+                        },
+                        stringLength: {
+                            max: 4,
+                            min: 4,
+                            message: 'Postnummer har ugyldig lengde'
+                        }
+                    }
+                },
+                invoiceCity: {
+                    trigger: 'blur',
+                    validators: {
+                        notEmpty: {
+                            message: 'Poststed mangler'
+                        }
+                    }
+                }
+            }
+        })
+            .on('success.form.bv', function(e) {
+                showSpinner();
+            })
+        ;
+
+
+    };
+
+});
+
+</script>
+
+<script>
+    $.webshims.polyfill();
+    $.webshims.setOptions({
+        extendNative: true
+    });
+</script>
+
+
+    <style type="text/css">
+        @media only screen and (max-width: 768px) {
+        .adhoc-large {
+            display: none;
+        }
+        .adhoc-small {
+            display: inherit;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        .adhoc-large {
+            display: inherit;
+        }
+        .adhoc-small {
+            display: none;
+        }
+    }
+
+    </style>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    
+    var loggedInUser = null;
+
+    
+    VGS.Event.subscribe('auth.login', function(data){
+        loggedInUser = data;
+        
+        if (typeof populateFieldsFromUserInfoIfPresent === "function") {
+            populateFieldsFromUserInfoIfPresent(loggedInUser);
+        }
+
+    });
+</script>
+
+
+
+
+
+
+
+    
+
+    <script type="text/javascript">
+        (function (e, b) {
+            if (!b.__SV) {
+                var a, f, i, g;
+                window.mixpanel = b;
+                a = e.createElement("script");
+                a.type = "text/javascript";
+                a.async = !0;
+                a.src = ("https:" === e.location.protocol ? "https:" : "http:") + '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';
+                f = e.getElementsByTagName("script")[0];
+                f.parentNode.insertBefore(a, f);
+                b._i = [];
+                b.init = function (a, e, d) {
+                    function f(b, h) {
+                        var a = h.split(".");
+                        2 == a.length && (b = b[a[0]], h = a[1]);
+                        b[h] = function () {
+                            b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                        }
+                    }
+
+                    var c = b;
+                    "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+                    c.people = c.people || [];
+                    c.toString = function (b) {
+                        var a = "mixpanel";
+                        "mixpanel" !== d && (a += "." + d);
+                        b || (a += " (stub)");
+                        return a
+                    };
+                    c.people.toString = function () {
+                        return c.toString(1) + ".people (stub)"
+                    };
+                    i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (g = 0; g < i.length; g++)f(c, i[g]);
+                    b._i.push([a, e, d])
+                };
+                b.__SV = 1.2
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("ebf3de5602ecabab6109c5f6e22adad8");
+    </script>
+
+   
+    <script type="text/javascript">
+
+        function formStatus(spidUserId) {
+            var isLoggedIn = ($('#userIsLoggedIn').val() == 'true');
+            var requireLogin = ($('#requireLogin').val() == 'true');
+            if (isLoggedIn) {
+                if (requireLogin) {
+                    return "LoggedIn";
+                } else {
+                    return "n/a - spidUserDataAvailable";
+                }
+            } else {
+                if (requireLogin) {
+                    if (spidUserId != null) {
+                        return "Locked - spidUserDataAvailable";
+                    }
+                    return "Locked";
+                } else {
+                    if (spidUserId != null) {
+                        return "n/a - spidUserDataAvailable";
+                    }
+                    return "n/a";
+                }
+            }
+        }
+
+        $(document).ready(function() {
+            
+            
+            VGS.Event.subscribe('auth.visitor', function(data) {
+                mixpanel.identify(data.uid);
+                var options = {};
+                
+                
+                    if (data.user_id) {
+                        options = { "SPiD ID": data.user_id, "orderFormId": "40", "Client":"Aftenposten"};
+                    } else {
+                        options = { "orderFormId": "40", "Client":"Aftenposten"};
+                    }
+                
+                
+                
+
+                if ($('#userIsLoggedIn').length > 0) {
+                    // only add Form LogIn Status on pages where the userIsLoggedIn hidden field is present
+                    if (data.user_id) {
+                        options["Form LogIn Status"] = formStatus(data.user_id);
+                    } else {
+                        options["Form LogIn Status"] = formStatus(null);
+                    }
+                }
+                mixpanel.track('AAI - View Order Form', options);
+            });
+
+            VGS.init({client_id: '520204a6411c7a8838000000', server: 'payment.schibsted.no', prod:false, logging:true, status:true});
+        });
+    </script>
+
+
+
+
+
+
+
+    <script src="//cdn.optimizely.com/js/1717590555.js"></script>
+
+
+
+
+
+
+
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+        
+            <script>
+                dataLayer = [];
+            </script>
+        
+    
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TB6HR3"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TB6HR3');</script>
+    <!-- End Google Tag Manager -->
+
+
+
+    <nav class="top_header" role="navigation">
+    <div class="container logo_container">
+        <div class="row">
+            <div class="logo"></div>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="container well">
+
+
+    
+        
+
+        <div class="row">
+            <img src="https://snotech-media.s3.amazonaws.com/ap/forlag/Innsikt/480x240_innsikt.jpg" alt="Aftenposten Innsikt" class="img-responsive hidden-sm hidden-md hidden-lg"/>
+        </div>
+
+        <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            
+            <div class="row">
+
+                
+                <div id="pretext" class="form-group" style="padding-left: 1em;">
+                    <h6><div class="adhoc-large">
+    <span style="color: #0099cc; "><h1>Aftenposten Innsikt</h1></span>
+
+<h4><span style="color: black; ">Aktualitetsmagasinet for deg som er opptatt av norsk og internasjonal politikk og samfunnsliv, og som ønsker større innsikt, bakgrunnsstoff og gode analyser.</h4>
+
+<h5><span style="color: black; ">Abonnementet inkluderer digital tilgang til magasinet mde alle tidligere utgaver på nettbrett og mobil.</h5>
+
+<h3><strong><span style="color: black; ">Ja takk, jeg ønsker å bestille:</strong>
+</div>
+<div class="adhoc-small">
+   <span style="color: black; "><h1>Aftenposten Innsikt</h1><br>
+<h4><span style="color: #0099cc; ">Aktualitetsmagasin med bakgrunn, analyser og meninger.</span></h4>
+<br>
+<h4><strong><span style="color: black; ">Ja takk, jeg ønsker å bestille:</strong>
+</div>
+</h6>
+                </div>
+
+            </div>
+
+            
+            <div class="row">
+                <form role="form" id="aaiForm" method="POST" action="subscription.htm" >
+    <input type="hidden" id="userIsLoggedIn" value="false"/>
+    <input type="hidden" id="requireLogin" value="false"/>
+
+    <div class="form-group" id="subTypeSelection">
+        
+            
+                
+                
+                    <div class="radio noLinkLook">
+                        
+                            
+                            <label>
+                                <input type="radio" id="subscriptionTypeId_2349" name="subscriptionTypeId" value="2349" checked> <h4>11 utgaver for kun kr 469,- (spar kr 290,-)*</h4>
+                            </label>
+                            
+                            
+                        
+                    </div>
+                
+            
+        
+            
+                
+                
+                    <div class="radio noLinkLook">
+                        
+                            
+                            
+                                <label>
+                                    <input type="radio" id="subscriptionTypeId_2347" name="subscriptionTypeId" value="2347"> <h4>6 utgaver for kun kr 299,- (spar kr 115,-)*</h4>
+                                </label>
+                            
+                        
+                    </div>
+                
+            
+        
+    </div>
+
+
+    <input type="hidden" id="subscriptionConfigurationId" name="subscriptionConfigurationId" value="40"/>
+
+    
+
+
+
+    <div id="selectedSubType">
+        
+
+
+<div id="formContainer" >
+    
+        
+
+        
+            
+                
+
+                
+
+                
+                    
+
+
+
+
+
+<input type="hidden" id="receiverSpidId" name="receiverSpidId"/>
+<input type="hidden" id="receiverDiId" name="receiverDiId"/>
+<input type="hidden" id="requireEmail" value="true"/>
+<input type="hidden" id="requirePhoneNr" value="true"/>
+
+<input type="hidden" id="ga_subTypeId" value="2349"/>
+<input type="hidden" id="ga_subTypeName" value="Aftenposten Innsikt"/>
+<input type="hidden" id="ga_subTypePrice" value="469.0"/>
+
+<input type="hidden" id="vg_checkZipForWeekendDelivery" value="false"/>
+
+
+
+
+
+
+
+
+<input type="hidden" name="elqSiteID" value="337390453">
+
+<input type="hidden" name="elqFormName" value="OrderForm40">
+<input type="hidden" name="elqCustomerGUID" value="">
+<input type="hidden" name="elqCookieWrite" value="0">
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+<div class="form-group padded_row">
+    <input type="text" class="form-control input" id="receiverFirstname" name="receiverFirstname" placeholder="Fornavn"
+           value="" required>
+</div>
+<div class="form-group padded_row">
+    <input type="text" class="form-control input" id="receiverLastname" name="receiverLastname" value="" placeholder="Etternavn">
+</div>
+
+
+
+<div class="form-group padded_row">
+    <input type="email" class="form-control input" id="receiverEmail" name="receiverEmail" value="" placeholder="E-post">
+</div>
+<div class="form-group padded_row">
+    <input type="tel" class="form-control input" id="receiverPhone" name="receiverPhone" value="" placeholder="Telefon">
+</div>
+
+<script>
+    $(function () {
+        try {
+            initReceiverDIAddressValidator();
+        } catch (e) {
+            console.log(e);
+        }
+    });
+</script>
+
+<div class="form-group scoreDiInput">
+    <div id="receiver-adresshelper-widget" class="ah-default-skin">
+
+        <div class="errorContainer"></div>
+        <input type="hidden" class="selectionCache">
+        <input type="hidden" id="receiverFloorType" name="receiverFloorType"/>
+
+        <div class="row padded_row">
+            <div class="form-group col-lg-8 col-sm-8 col-md-8">
+                <input class="streetInput form-control input" id="receiverStreet" name="receiverStreet" placeholder="Gate/vei" value="" />
+                <div class="streetContainer"></div>
+                <span class="help-block" id="addressMessage"></span>
+            </div>
+            <div class="form-group col-lg-4 col-sm-4 col-md-4">
+                <input class="streetNumberInput form-control input" id="receiverStreetNo" name="receiverStreetNo" placeholder="Gatenr." maxlength="5" value="" />
+                <div class="streetNumberContainer"></div>
+            </div>
+        </div>
+
+        <div class="row padded_row">
+            <div class="form-group floorInputWrapper col-lg-6 col-sm-6 col-md-6">
+                <input name="receiverFloor" class="floorInput form-control input" id="receiverFloor" placeholder="Etasje" maxlength="16" value="" />
+                <div class="floorContainer"></div>
+            </div>
+            <div class="form-group householdInputWrapper col-lg-6 col-sm-6 col-md-6">
+                <input name="receiverAptNo" class="householdInput form-control input" id="receiverAptNo" placeholder="Leilighet" maxlength="8" value="" />
+                <div class="householdContainer"></div>
+            </div>
+        </div>
+
+        <div class="row padded_row">
+            <div class="form-group col-lg-4 col-sm-4 col-md-4">
+                <input name="receiverZipCode" class="zipLabel form-control input feedback-small" id="receiverZipCode" placeholder="Postnr." value="" />
+            </div>
+            <div class="form-group col-lg-8 col-sm-8 col-md-8">
+                <input name="receiverCity" class="cityLabel form-control input feedback-small" id="receiverCity" placeholder="Poststed" value="" />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+    <div class="form-group">
+        
+            
+            
+                <div class="row">
+                    <div class="col-md-1"><input type="checkbox" name="storeUserInfo" id="storeUserInfo"/></div>
+                    <div id="infoText" class="col-md-10">Ja, jeg samtykker til å motta tilbud og informasjon
+                        om kundefordeler fra Aftenposten elektronisk.
+                    </div>
+                </div>
+            
+        
+    </div>
+
+
+
+<div id="posttext" class="form-group col-xs-12">
+    <h6><h4>Tilbudet gjelder nye kunder i Norge og abonnementet løper til vi mottar annen beskjed. * I forhold til pris i butikk.</h4></h6>
+</div>
+
+
+
+
+
+
+    
+
+<div class="form-group col-lg-12 col-md-12 col-sm-12">
+    <button type="submit" id="formSubmitButton" class="btn btn-primary" data-loading-text="<i class='fa fa-spinner fa-spin'></i>  Sender bestilling..."><h4>Send bestilling</h4></button>
+</div>
+
+
+                    
+                
+            
+
+        
+    
+</div>
+
+
+
+    <script type="application/javascript">
+    $(function () {
+
+    $('#autoFields').hide();
+    $('button[name=phoneBtn]').hide();
+    $(".householdInput").show();
+    $(".floorInput").show();
+    $("#errorBox").hide();
+
+    $("#startDate").datepicker({
+            autoclose: true
+    });
+    //$("#childDOB").datepicker();
+
+    addPhoneAndDobLookupListeners();
+
+    populateFieldsFromUserInfoIfPresent(loggedInUser);
+});
+
+function showSpinner(){
+    $('#spinner').addClass('show-spinner');
+    var btn = $('#formSubmitButton');
+    btn.button('loading');
+    setTimeout(function () {
+        btn.button('reset')
+    }, 40000);
+}
+
+    $(function () {
+    invalidateOrderform();
+    validateOrderform();
+});
+    // Helper.
+var zeroPad = function (val, len) {
+    val = "" + val;
+    while (val.length < len) {
+        val = "0" + val;
+    }
+    return val;
+};
+
+var config = {
+    apiKey: 'qJuSiqn+5yT2A4ADZBSWIMu46At9Q+oP',
+    limitToOfficial: true,
+    useGeoLocation: true,
+    allowFreeform: true
+};
+
+initReceiverDIAddressValidator = function () {
+    YAHOO.util.Event.onDOMReady(function () {
+        var receiverAdressHelperWidget = new DI.AddressHelper('receiver-adresshelper-widget', config);
+
+        receiverAdressHelperWidget.selectionChangeEvent.subscribe(function () {
+            var address = receiverAdressHelperWidget.getSelectedAddress();
+            var complete = receiverAdressHelperWidget.isComplete();
+            var diId = $("#receiverDiId");
+
+            if (YAHOO.lang.isObject(address.street)) {
+                // Gate er valgt
+            }
+            if (YAHOO.lang.isObject(address.streetNumber)) {
+                // Gatenummer er valgt
+            }
+            if (YAHOO.lang.isObject(address.floor)) {
+                // Etasje er valgt
+                $("#receiverFloorType").val(address.floor.floorType);
+            }
+            if (YAHOO.lang.isObject(address.household)) {
+                // Leilighet er valgt
+            }
+
+            if (complete) {
+                if (YAHOO.lang.isObject(address.household) && address.household.deliveryPointId) {
+                    var flatNo = address.household.flatNo;
+                    if (flatNo) { //To avoid 'Vet ikke' entry
+                        diId.val(address.household.deliveryPointId);
+                        $("#receiverAptNo").val(address.floor.floorType + zeroPad(address.floor.floorNo, 2) + zeroPad(flatNo, 2));
+                    }
+                } else if (YAHOO.lang.isObject(address.streetNumber) && address.streetNumber.deliveryPointId && address.floor == -1) {
+                    diId.val(address.streetNumber.deliveryPointId);
+                } else {
+                    diId.val("");
+                }
+            }
+        });
+    });
+};
+
+initInvoiceDIAddressValidator = function () {
+    $('#invoiceFields').hide();
+
+    $('#anotherInvoicePayerTrigger').change(function () {
+        $('#invoiceFields').toggle("slow", function () {
+            var toggle = $('#anotherInvoicePayerTrigger').prop('checked');
+            if (toggle)
+                $('#invoiceFields input').show();
+            else
+                $('#invoiceFields input').hide();
+        });
+
+    });
+
+    YAHOO.util.Event.onDOMReady(function () {
+        var invoiceDIAddressHelperWidget = new DI.AddressHelper('invoice-adresshelper-widget', config);
+
+        invoiceDIAddressHelperWidget.selectionChangeEvent.subscribe(function () {
+            var invoiceAddress = invoiceDIAddressHelperWidget.getSelectedAddress();
+            var invoiceAddressComplete = invoiceDIAddressHelperWidget.isComplete();
+            var invoiceDiId = $("#invoiceDiId");
+
+            if (YAHOO.lang.isObject(invoiceAddress.street)) {
+                // Gate er valgt
+            }
+            if (YAHOO.lang.isObject(invoiceAddress.streetNumber)) {
+                // Gatenummer er valgt
+            }
+            if (YAHOO.lang.isObject(invoiceAddress.floor)) {
+                // Etasje er valgt
+                $("#invoiceFloorType").val(invoiceAddress.floor.floorType);
+            }
+            if (YAHOO.lang.isObject(invoiceAddress.household)) {
+                // Leilighet er valgt
+            }
+
+            if (invoiceAddressComplete) {
+                if (YAHOO.lang.isObject(invoiceAddress.household) && invoiceAddress.household.deliveryPointId) {
+                    var flatNo = invoiceAddress.household.flatNo;
+                    if (flatNo) { //To avoid 'Vet ikke' entry
+                        invoiceDiId.val(invoiceAddress.household.deliveryPointId);
+                        $("#invoiceAptNo").val(invoiceAddress.floor.floorType + zeroPad(invoiceAddress.floor.floorNo, 2) + zeroPad(flatNo, 2));
+                    }
+                } else if (YAHOO.lang.isObject(invoiceAddress.streetNumber) && invoiceAddress.streetNumber.deliveryPointId && invoiceAddress.floor == -1) {
+                    invoiceDiId.val(invoiceAddress.streetNumber.deliveryPointId);
+                } else {
+                    invoiceDiId.val("");
+                }
+            }
+        });
+    });
+};
+
+
+
+</script>
+
+
+
+    </div>
+
+
+</form>
+
+<div id="errorBox" class="col-lg-12 col-md-12 col-sm-12" style="display: none;">
+    <div class="alert alert-danger">
+        <p id="errorMessage"></p>
+    </div>
+</div>
+            </div>
+
+        </div>
+
+        
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <img src="https://snotech-media.s3.amazonaws.com/ap/forlag/Innsikt/450x800_innsikt.jpg" alt="Aftenposten Innsikt" class="img-responsive hidden-xs"/>
+        </div>
+
+    </div>
+
+    
+    <div class="row">
+        <h2></h2>
+    </div>
+</div>
+    <div id="spinner">
+    <div class="vert-align">
+        <div class="spinnerbox">
+            <div class="spinnercontent">
+                <i class="ion-load-c animate-spin"></i>
+                <p>Vi behandler din forespørsel, vennligst vent</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js" defer></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js" defer></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js" defer></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js" defer></script>
+
+<script type="text/javascript" src="/bestilling/js/jquery.qtip.js" defer></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js" defer></script>
+
+<script type="text/javascript" src="/bestilling/js/orderforms/bootstrapValidator.min.js?v=dad2831" defer></script>
+
+<script src="/bestilling/js-webshim/minified/polyfiller.js" defer></script>
+
+
+
+
+
+<link rel="stylesheet" href="/bestilling/Spinner/styles/main.css">
+<link rel="stylesheet" href="/bestilling/Spinner/styles/ionicons.min.css">
+
+
+<script>
+    var cb = function() {
+        ls('//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css');
+        ls('/bestilling/css/datepicker.css');
+        ls('/bestilling/css/orderforms/bootstrapValidator.min.css');
+        
+        
+    };
+    var ls = function(sName) {
+        var l = document.createElement('link');
+        l.rel = 'stylesheet';
+        l.href = sName;
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);
+</script>
+
+
+    <div class="modal_spinner"><!-- Place at bottom of page --></div>
+</body>
+</html>
